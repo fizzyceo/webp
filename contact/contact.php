@@ -14,7 +14,9 @@
         <li class="option active"><a href="#">Home</a></li>
         <li class="option"><a href="#">About</a></li>
         <li class="option"><a href="#">Events</a></li>
-        <li class="option"><a href="/inscription/inscp.html">demande</a></li>
+        <li class="option">
+          <a href="projetWeb/inscription/inscp1.php">demande</a>
+        </li>
         <li class="option"><a href="#">Contact</a></li>
       </ul>
     </nav>
@@ -175,9 +177,6 @@
             <button class="submit" type="submit">Sent Message</button>
           </div>
         </form>
-      </section>
-      <section id="contacting" class="third">
-        <h1>HAHAHA</h1>
       </section>
     </main>
     <script src="contact.js"></script>

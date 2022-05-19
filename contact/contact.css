@@ -29,6 +29,9 @@ main::before {
   );
   pointer-events: none;
 }
+main {
+  overflow: hidden;
+}
 nav {
   z-index: 2;
   display: flex;
@@ -184,7 +187,7 @@ p {
   height: 35rem;
   grid-template-columns: 40% 60%;
   padding: 4rem;
-  margin: 7rem auto;
+  margin: 10rem auto;
   position: relative;
   border-radius: 10%;
   width: 80%;

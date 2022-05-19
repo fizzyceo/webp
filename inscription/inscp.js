@@ -23,7 +23,8 @@ next1.addEventListener("click", (e) => {
   e.preventDefault();
 
   form1.style.left = "-100%";
-  form2.style.left = "0%";
+  form2.style.left = "00%";
+  form3.style.left = "100%";
   progress.style.width = "66.6%";
 });
 next2.addEventListener("click", (e) => {
@@ -48,9 +49,3 @@ previous2.addEventListener("click", (e) => {
   form2.style.left = "0%";
   progress.style.width = "66.6%";
 });
-
-const submit = () => {
-  form1.submit();
-  form2.submit();
-  form3.submit();
-};

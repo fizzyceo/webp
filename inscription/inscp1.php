@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="inscp.css" />
   </head>
   <body>
+  
     <nav class="navbar">
       <img class="logo" src="/Logo-MC-Blue-nobackground_2.png" alt="" />
       <ul class="menu-list">
@@ -15,7 +16,7 @@
         <li class="option"><a href="#">About</a></li>
         <li class="option"><a href="#">Events</a></li>
         <li class="option"><a href="#">demande</a></li>
-        <li class="option"><a href="/contact/contact.html">Contact</a></li>
+        <li class="option"><a href="projetWeb/contact/contact.html">Contact</a></li>
       </ul>
     </nav>
     <main>
@@ -85,60 +86,148 @@
           <div class="formContainer">
             <h1>inscription</h1>
 
-            <form id="form1" action="" method="post">
-              <input type="name" placeholder="your name" required />
-              <input type="last name" placeholder="your last name" required />
-              <input type="email" placeholder="your email" required />
-              <input type="number" placeholder="phone number" required />
-              <div class="btn-box">
-                <button class="next next1">next</button>
+            <form action="inscp.php" method="post">
+              <div id="form1">
+                <div class="inputcont">
+                  <input
+                    class="name"
+                    type="text"
+                    name="name"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="labelname"
+                    ><span class="contentname"> Name</span></label
+                  >
+                </div>
+                <div class="inputcont">
+                  <input
+                    class="name"
+                    type="text"
+                    name="last_name"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="labelname"
+                    ><span class="contentname"> Last Name</span></label
+                  >
+                </div>
+                <div class="inputcont">
+                  <input
+                    class="name"
+                    type="email"
+                    name="email"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="labelname"
+                    ><span class="contentname"> Email</span></label
+                  >
+                </div>
+                <div class="inputcont">
+                  <input
+                    class="number"
+                    type="text"
+                    name="number"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="labelname"
+                    ><span class="contentname">Phone Number</span></label
+                  >
+                </div>
+
+                <div class="btn-box">
+                  <button class="next next1">next</button>
+                </div>
               </div>
-            </form>
 
-            <form id="form2" action="" method="post">
-              <input type="matricule" placeholder="your matricule" required />
+              <div id="form2">
+                <div class="inputcont">
+                  <input
+                    class="name"
+                    type="text"
+                    name="matricule"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="labelname"
+                    ><span class="contentname"> Matricule</span></label
+                  >
+                </div>
 
-              <select name="year" id="year">
-                <option selected hidden value="">Select the year</option>
-                <option value="L1">L1</option>
-                <option value="L2">L2</option>
-                <option value="L3">L3</option>
-                <option value="m1">M1</option>
-                <option value="m2">M2</option>
-              </select>
+                <select name="year" id="year">
+                  <option selected hidden value="">Select the year</option>
+                  <option value="L1">L1</option>
+                  <option value="L2">L2</option>
+                  <option value="L3">L3</option>
+                  <option value="m1">M1</option>
+                  <option value="m2">M2</option>
+                </select>
 
-              <input type="specialty" placeholder="your specialty" />
-              <div class="btn-box">
-                <button class="next next2">next</button>
-                <button class="previous1">previous</button>
+                <div class="inputcont">
+                  <input
+                    class="name"
+                    type="text"
+                    name="specialty"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="labelname"
+                    ><span class="contentname"> Specialty</span></label
+                  >
+                </div>
+                <div class="btn-box">
+                  <button class="next next2">next</button>
+                  <button class="previous1">previous</button>
+                </div>
               </div>
-            </form>
 
-            <form id="form3" action="" method="post">
-              <input
-                type="text"
-                name="faculty"
-                placeholder="your faculty"
-                id=""
-              />
-              <input
-                type="text"
-                name="motif"
-                placeholder="inscription motif"
-                required
-              />
-              <input
-                type="text"
-                name="objectif"
-                placeholder="your abjectif"
-                required
-              />
+              <div id="form3">
+                <div class="inputcont">
+                  <input
+                    class="name"
+                    type="text"
+                    name="faculty"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="labelname"
+                    ><span class="contentname"> Faculty</span></label
+                  >
+                </div>
+                <div class="inputcont">
+                  <input
+                    class="name"
+                    type="text"
+                    name="motif"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="labelname"
+                    ><span class="contentname"> Motif</span></label
+                  >
+                </div>
 
-              <div class="btn-box">
-                <button type="submit" class="submit" onclick="submit()">
-                  submit
-                </button>
-                <button class="previous2">previous</button>
+                <div class="inputcont">
+                  <input
+                    class="name"
+                    type="text"
+                    name="objectif"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name" class="labelname"
+                    ><span class="contentname"> Objectif</span></label
+                  >
+                </div>
+
+                <div class="btn-box">
+                  <button type="submit" class="submit" onclick="submit()">
+                    submit
+                  </button>
+                  <button class="previous2">previous</button>
+                </div>
               </div>
             </form>
           </div>
@@ -147,5 +236,9 @@
     </main>
 
     <script src="inscp.js"></script>
+    <?php
+
+    include ('inscp.php');
+    ?>
   </body>
 </html>
