@@ -37,6 +37,7 @@ if (isset($_POST['submit'])) {
                 $stmt->bind_param("ssssssssss",$name, $lastname, $number, $email, $matricule, $year,$faculty,$specialty,$motif,$objectif);
                 if ($stmt->execute()) {
                     echo "New record inserted sucessfully.";
+                    header("Location: /inscp1.php");
                 }
                 else {
                     echo $stmt->error;

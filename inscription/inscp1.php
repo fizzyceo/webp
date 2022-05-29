@@ -86,7 +86,7 @@
           <div class="formContainer">
             <h1>inscription</h1>
 
-            <form action="inscp.php" method="post">
+            <form action="/projetwebx/inscription/inscp.php" method="post">
               <div id="form1">
                 <div class="inputcont">
                   <input
